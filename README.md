@@ -6,7 +6,7 @@ This project implements a beamforming simulation using a **one-dimensional phase
 
 The system simulates beam steering towards a **single desired user** while placing **nulls** in the directions of **interfering users** using the **Null-Steering Beamforming (NSB)** algorithm. The simulation sweeps across all possible angles to evaluate performance and accurately forms beams and nulls based on array geometry and user distribution.
 
-After computation, the results are analyzed using the `DataManager` class to extract metrics such as **angle error** for the main lobe and nulls.
+After computation, the results are analyzed using the `DataManager` class to extract metrics such as **angle error** for the main lobe and nulls, as well ass side lobe levelss.
 
 ---
 
