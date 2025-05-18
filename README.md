@@ -36,5 +36,5 @@ Make sure Eigen is available on your system. You can install it using a package 
 1. **Clone the Repository**
 
 ```bash
-git clone https://github.com/your-username/nsb-beamforming.git
-cd nsb-beamforming
+git clone https://github.com/your-username/Beamforming.git
+cd Beamforming
