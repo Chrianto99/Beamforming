@@ -1,0 +1,8 @@
+# ninja log v5
+7	1999	7431070354640657	CMakeFiles/BeamForming.dir/main.cpp.obj	7babc83d1e3beab
+6	5254	7431065517198598	CMakeFiles/BeamForming.dir/NSB.cpp.obj	f072652e71be8a6f
+4	3141	7431071979093318	BeamForming.exe	a7fa94922d23f73b
+1	172	7561543853880118	build.ninja	7712cc9a5280d765
+11	910	7431070343751328	CMakeFiles/BeamForming.dir/InputManager.cpp.obj	5be2bcefc51e7eeb
+14	3197	7431071501516384	CMakeFiles/BeamForming.dir/DataManager.cpp.obj	f378cc8a0874f08
+18	2556	7431065490299109	CMakeFiles/BeamForming.dir/GeneralUseFunctions.cpp.obj	bf0ebb53b746aecb
