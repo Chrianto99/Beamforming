@@ -1,19 +1,40 @@
-# Beamforming with Phased Array Dipoles using NSB Algorithm
+# NSB Beamforming with 1D Phased Array in C++
 
-## Overview
+## Project Description
 
-This project implements a beamforming simulation using a one-dimensional phased array of dipole antennas. The objective is to steer the beam towards a desired user while nulling (placing zeroes) in the direction of interfering or undesired users. The system employs the Null-Steering Beamforming (NSB) algorithm to achieve directional accuracy and interference suppression.
+This project implements a beamforming simulation using a **one-dimensional phased array** of dipole antennas. It is written in **modern C++** and uses the **Eigen** library for efficient linear algebra operations.
 
-## Key Features
+The system simulates beam steering towards a **single desired user** while placing **nulls** in the directions of **interfering users** using the **Null-Steering Beamforming (NSB)** algorithm. The simulation sweeps across all possible angles to evaluate performance and accurately forms beams and nulls based on array geometry and user distribution.
 
-- **Phased Array Configuration**: Linear array of dipoles with customizable element count.
-- **NSB Algorithm Implementation**: Steers the main lobe toward a target user and places nulls towards undesired users.
-- **Angular Sweeping**: Evaluates system performance across a sweep of azimuthal angles.
-- **Multi-User Scenarios**: Supports varying numbers of desired and interfering users.
-- **Performance Evaluation**: Includes a `DataManager` class to:
-  - Extract and manage simulation results.
-  - Quantify angle errors for null and main beam placement.
-  - Evaluate overall accuracy of beamforming performance.
+After computation, the results are analyzed using the `DataManager` class to extract metrics such as **angle error** for the main lobe and nulls.
 
-## Structure
+---
 
+## Features
+
+- ✅ **Phased Array Simulation**: Linear array of dipole elements.
+- 🎯 **Null-Steering Beamforming (NSB)**: Places directional nulls at interfering user angles and maximizes gain toward the desired user.
+- 🔁 **Angle Sweeping**: Simulates performance over a full angular range.
+- 👥 **Multi-User Support**: Works with different numbers and placements of desired and undesired users.
+- 📊 **Performance Evaluation**: 
+  - Main lobe accuracy
+  - Null direction accuracy
+  - Visualization-ready data output
+
+---
+
+## Dependencies
+
+- [Eigen](https://eigen.tuxfamily.org/) (header-only linear algebra library)
+
+Make sure Eigen is available on your system. You can install it using a package manager (e.g., `apt`, `brew`) or by downloading it manually.
+
+---
+
+## Build Instructions
+
+1. **Clone the Repository**
+
+```bash
+git clone https://github.com/your-username/nsb-beamforming.git
+cd nsb-beamforming
